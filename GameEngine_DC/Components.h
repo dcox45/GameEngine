@@ -1,22 +1,22 @@
 #pragma once
 #include "ECS.h"
 #include <iostream>
-class Components
-{
-	struct Transform {
-		ECS_DECLARE_TYPE;  
-		Transform(float x, float y) {
-			X = x;   
-			Y = y;   
-			rotation = 0.f;
-		}
+#include <SFML/Graphics.hpp>
 
-		float X;  
-		float Y;  
-		float rotation;
-	};
+struct Transform {
+	ECS_DECLARE_TYPE;
+	Transform(float x, float y) {
+		X = x;
+		Y = y;
+		rotation = 0.f;
+	}
 
-	ECS_DEFINE_TYPE(Transform);
+	float X;
+	float Y;
+	float rotation;
+};
+
+ECS_DEFINE_TYPE(Transform);
 
 
 struct Sprite {
@@ -33,5 +33,3 @@ struct Sprite {
 
 ECS_DEFINE_TYPE(Sprite);
 
-
-};

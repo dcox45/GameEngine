@@ -39,11 +39,18 @@ void Engine::update() {
 
 		}
 		//return 0;
+		world->tick(1.0f);
 	}
 }
 
 Engine::~Engine(void) {
 
+}
+
+void Engine::addSystem(ECS::EntitySystem* newSys)
+{
+	world->registerSystem(newSys);
+	world->enableSystem(newSys);  
 }
 
 
