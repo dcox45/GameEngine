@@ -1,13 +1,30 @@
 // ConsoleApplication1.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <iostream>
 #include <SFML/Graphics.hpp>
 #include "Engine.h"
+#include "Components.h"
+#include "RenderingSystem.h"
 
 int main()
 {
-	Engine::getInstance().start(800, 600, "Game Engine");
+
+	Engine& gameEngine = Engine::getInstance();
+	sf::RenderWindow win(sf::VideoMode(800, 600), "Game Engine");
+
+	gameEngine.world = ECS::World::createWorld();
+	ECS::Entity* ent;
+
+	gameEngine.addSystem(new RenderingSystem());
+
+	for (int i = 0; i < 25; i++) {
+		for (int j = 0; j < 10; j++) {
+			ent = gameEngine.world->create();
+			ent->assign<Transform>(i * 25, j * 32);
+			ent->assign <Sprite>("../Debug/hero.png");
+		}
+	}
+	gameEngine.start(&win);
 
    // std::cout << "Hello World!\n";
 	return 0;

@@ -5,17 +5,17 @@
 
 class RenderingSystem : public ECS::EntitySystem
 {
-public:
-	RenderingSystem(void);
-	~RenderingSystem(void);
-	void tick(ECS::World* world, float dTime) override;
 
 private:
 
 	std::unordered_map<std::string, sf::Texture*> _textureMap;
 	sf::Texture* _loadTexture(std::string Texture);
 
-};
+public:
+	RenderingSystem(void);
+	~RenderingSystem(void);
+	void tick(ECS::World* world, float dTime) override;
 
+};
 
 

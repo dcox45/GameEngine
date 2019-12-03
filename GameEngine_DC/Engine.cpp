@@ -21,9 +21,10 @@ Engine& Engine::getInstance(void) {
 	return instance;
 }
 
-void Engine::start(int width, int height, std::string name) {
-	sf::RenderWindow win(sf::VideoMode(width, height), name);
-	window = &win;
+void Engine::start(sf::RenderWindow* win) {
+	
+	window = win;
+	quit = false; 
 	update();
 
 	
@@ -46,11 +47,4 @@ void Engine::update() {
 Engine::~Engine(void) {
 
 }
-
-void Engine::addSystem(ECS::EntitySystem* newSys)
-{
-	world->registerSystem(newSys);
-	world->enableSystem(newSys);  
-}
-
 
