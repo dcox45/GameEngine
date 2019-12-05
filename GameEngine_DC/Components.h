@@ -33,3 +33,30 @@ struct Sprite {
 
 ECS_DEFINE_TYPE(Sprite);
 
+struct Animator {
+	ECS_DECLARE_TYPE;
+
+	Animator(int width, int height, float timeBetweenFrames) {
+
+		sprWidth = width;
+		sprHeight = height;
+		currCol = 0;
+		currRow = 0;
+		nextFrameTime = timeBetweenFrames;
+		currTime = 0;
+	}
+
+	int sprWidth;
+	int sprHeight;
+	int currCol;
+	int currRow;
+	float currTime;
+	float nextFrameTime;
+
+		 
+
+	}
+};
+
+ECS_DEFINE_TYPE(Animator); 
+
