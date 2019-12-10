@@ -10,7 +10,7 @@ class AnimationSystem
 public:
 	AnimationSystem(void);
 	~AnimationSystem(void);
-	void tick(ECS::World* world, float dTime) override; 
+	void tick(ECS::World* world, float dTime); 
 
 };
 

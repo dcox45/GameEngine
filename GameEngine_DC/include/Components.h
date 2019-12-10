@@ -55,7 +55,7 @@ struct Animator {
 
 		 
 
-	}
+	
 };
 
 ECS_DEFINE_TYPE(Animator); 
