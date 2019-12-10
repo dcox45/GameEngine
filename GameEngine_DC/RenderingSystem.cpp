@@ -1,7 +1,7 @@
-#include "RenderingSystem.h"
+#include "include/RenderingSystem.h"
 #include <iostream>
-#include "ECS.h"
-#include "Components.h" 
+#include "include/ECS.h"
+#include "include/Components.h" 
 
 
 RenderingSystem::RenderingSystem(void)

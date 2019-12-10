@@ -1,8 +1,8 @@
-#include "AnimationSystem.h"
-#include "RenderingSystem.h"
+#include "include/AnimationSystem.h"
+#include "include/RenderingSystem.h"
 #include <iostream>
-#include "ECS.h"
-#include "Components.h"
+#include "include/ECS.h"
+#include "include/Components.h"
 
 void AnimationSystem::tick(ECS::World* world, float dTime) {
 	world->each<Animator, Sprite>(

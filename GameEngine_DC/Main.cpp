@@ -2,9 +2,9 @@
 //
 
 #include <SFML/Graphics.hpp>
-#include "Engine.h"
-#include "Components.h"
-#include "RenderingSystem.h"
+#include "include/Engine.h"
+#include "include/Components.h"
+#include "include/RenderingSystem.h"
 
 int main()
 {

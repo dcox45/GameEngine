@@ -164,11 +164,11 @@
     <ClCompile Include="RenderingSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\AnimationSystem.h" />
-    <ClInclude Include="..\include\Components.h" />
-    <ClInclude Include="..\include\ECS.h" />
-    <ClInclude Include="..\include\Engine.h" />
-    <ClInclude Include="..\include\RenderingSystem.h" />
+    <ClInclude Include="include\AnimationSystem.h" />
+    <ClInclude Include="include\Components.h" />
+    <ClInclude Include="include\ECS.h" />
+    <ClInclude Include="include\Engine.h" />
+    <ClInclude Include="include\RenderingSystem.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
