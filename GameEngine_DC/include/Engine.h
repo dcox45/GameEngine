@@ -1,6 +1,10 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "ECS.h"
+#include "Components.h"
+#include "AnimationSystem.h"
+#include "RenderingSystem.h"
+
 class Engine
 {
 

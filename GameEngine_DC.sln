@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		ECS.h = ECS.h
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DCs_Adventure", "DCs_Adventure\DCs_Adventure.vcxproj", "{A92BA97D-8D18-415F-9AFE-BDCDA33D88E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -26,6 +28,14 @@ Global
 		{5F70A7DE-B44D-4308-ADFA-6358BEFAC470}.Release|x64.Build.0 = Release|x64
 		{5F70A7DE-B44D-4308-ADFA-6358BEFAC470}.Release|x86.ActiveCfg = Release|Win32
 		{5F70A7DE-B44D-4308-ADFA-6358BEFAC470}.Release|x86.Build.0 = Release|Win32
+		{A92BA97D-8D18-415F-9AFE-BDCDA33D88E2}.Debug|x64.ActiveCfg = Debug|x64
+		{A92BA97D-8D18-415F-9AFE-BDCDA33D88E2}.Debug|x64.Build.0 = Debug|x64
+		{A92BA97D-8D18-415F-9AFE-BDCDA33D88E2}.Debug|x86.ActiveCfg = Debug|Win32
+		{A92BA97D-8D18-415F-9AFE-BDCDA33D88E2}.Debug|x86.Build.0 = Debug|Win32
+		{A92BA97D-8D18-415F-9AFE-BDCDA33D88E2}.Release|x64.ActiveCfg = Release|x64
+		{A92BA97D-8D18-415F-9AFE-BDCDA33D88E2}.Release|x64.Build.0 = Release|x64
+		{A92BA97D-8D18-415F-9AFE-BDCDA33D88E2}.Release|x86.ActiveCfg = Release|Win32
+		{A92BA97D-8D18-415F-9AFE-BDCDA33D88E2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

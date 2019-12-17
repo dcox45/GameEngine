@@ -5,6 +5,8 @@
 #include "include/Engine.h"
 #include "include/Components.h"
 #include "include/RenderingSystem.h"
+#include "include/AnimationSystem.h"
+
 
 int main()
 {
@@ -16,6 +18,8 @@ int main()
 	ECS::Entity* ent;
 
 	gameEngine.addSystem(new RenderingSystem());
+	gameEngine.addSystem(new AnimationSystem());
+
 
 	for (int i = 0; i < 25; i++) {
 		for (int j = 0; j < 10; j++) {

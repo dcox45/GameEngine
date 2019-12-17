@@ -4,7 +4,7 @@
 #include "ECS.h"
 #include "Components.h"
 
-class AnimationSystem
+class AnimationSystem : public ECS::EntitySystem
 {
 
 public:
