@@ -11,6 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DCs_Adventure", "DCs_Adventure\DCs_Adventure.vcxproj", "{A92BA97D-8D18-415F-9AFE-BDCDA33D88E2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5F70A7DE-B44D-4308-ADFA-6358BEFAC470} = {5F70A7DE-B44D-4308-ADFA-6358BEFAC470}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
