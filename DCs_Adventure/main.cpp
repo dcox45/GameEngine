@@ -9,10 +9,15 @@ int main()
 
 	gameEngine.world = ECS::World::createWorld();
 	ECS::Entity* ent;
+	ECS::Entity* background; 
 
 	gameEngine.addSystem(new RenderingSystem());
 	gameEngine.addSystem(new AnimationSystem());
 	gameEngine.addSystem(new MovementSystem());
+
+	background = gameEngine.world->create();
+	background->assign<Transform>(0, 0);
+	background->assign<Sprite>("../Debug/background.png");
 
 	for (int j = 0; j < 10; j++) {
 		ent = gameEngine.world->create();
@@ -21,6 +26,8 @@ int main()
 		ent->assign<Animator>(32, 32, 200.f);
 		ent->assign<InputController>();
 	}
+
+	
 	
 	gameEngine.start(&win);
 	return 0;
