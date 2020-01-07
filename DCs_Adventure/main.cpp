@@ -1,3 +1,4 @@
+#include <SFML/Graphics.hpp>
 #include <Engine.h>
 
 
@@ -11,12 +12,14 @@ int main()
 
 	gameEngine.addSystem(new RenderingSystem());
 	gameEngine.addSystem(new AnimationSystem());
+	gameEngine.addSystem(new MovementSystem());
 
 	for (int j = 0; j < 10; j++) {
 		ent = gameEngine.world->create();
 		ent->assign<Transform>(25, 32);
 		ent->assign<Sprite>("../Debug/herosheet.png");
 		ent->assign<Animator>(32, 32, 200.f);
+		ent->assign<InputController>();
 	}
 	
 	gameEngine.start(&win);

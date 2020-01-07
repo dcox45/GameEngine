@@ -44,6 +44,12 @@ void Engine::update() {
 	}
 }
 
+void Engine::addSystem(ECS::EntitySystem* newSys)
+{
+	world->registerSystem(newSys);
+	world->enableSystem(newSys);
+}
+
 Engine::~Engine(void) {
 
 }

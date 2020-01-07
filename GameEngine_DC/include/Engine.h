@@ -4,6 +4,8 @@
 #include "Components.h"
 #include "AnimationSystem.h"
 #include "RenderingSystem.h"
+#include "MovementSystem.h"
+
 
 class Engine
 {
@@ -26,11 +28,9 @@ public:
 
 	ECS::World* world;
 	
-	void addSystem(ECS::EntitySystem* newSys)
-	{
-		world->registerSystem(newSys);
-		world->enableSystem(newSys);
-	}
+	void addSystem(ECS::EntitySystem* newSys);
+
+
 	
 
 };

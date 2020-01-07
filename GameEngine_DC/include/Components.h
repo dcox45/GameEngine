@@ -60,3 +60,17 @@ struct Animator {
 
 ECS_DEFINE_TYPE(Animator); 
 
+
+struct InputController {
+	ECS_DECLARE_TYPE;
+	//Key State variables here, default false;
+	bool wKey, sKey, aKey, dKey;
+	InputController() {
+		wKey = false;
+		sKey = false;
+		aKey = false;
+		dKey = false;
+	}
+};
+ECS_DEFINE_TYPE(InputController);
+

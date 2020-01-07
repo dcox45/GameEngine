@@ -4,6 +4,10 @@
 #include "include/ECS.h"
 #include "include/Components.h"
 
+AnimationSystem::AnimationSystem(void) {}
+
+AnimationSystem::~AnimationSystem(void) {}
+
 void AnimationSystem::tick(ECS::World* world, float dTime) {
 	world->each<Animator, Sprite>(
 		[&](ECS::Entity* ent,

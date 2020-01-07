@@ -20,10 +20,7 @@ void RenderingSystem::tick(ECS::World* world, float deltaTime) {
 		[&](ECS::Entity* ent,
 			ECS::ComponentHandle<Transform> transform,
 			ECS::ComponentHandle<Sprite> sprite) -> void {
-
-				
-
-			//Add texture to map 
+				//Add texture to map 
 				if (_textureMap.count(sprite->texture) < 1) { 
 					_textureMap[sprite->texture] = _loadTexture(sprite->texture);
 				} 

@@ -83,7 +83,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)$(Configuration)\lib</OutDir>
+    <OutDir>$(SolutionDir)$(ProjectName)\lib</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -162,6 +162,7 @@
     <ClCompile Include="AnimationSystem.cpp" />
     <ClCompile Include="Components.cpp" />
     <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="MovementSystem.cpp" />
     <ClCompile Include="RenderingSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -169,6 +170,7 @@
     <ClInclude Include="include\Components.h" />
     <ClInclude Include="include\ECS.h" />
     <ClInclude Include="include\Engine.h" />
+    <ClInclude Include="include\MovementSystem.h" />
     <ClInclude Include="include\RenderingSystem.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
